@@ -11,9 +11,13 @@ function App() {
   return (
     <>
       <BrowserRouter>
+      <div 
+        className='flex h-[100vh] w-full justify-center items-center'
+      >
       <Routes>
       <Route path="/" element={<Counter/>} />
       </Routes>
+      </div>
       </BrowserRouter>
     </>
   )
