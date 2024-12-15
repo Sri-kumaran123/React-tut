@@ -6,6 +6,7 @@ import { BrowserRouter, Route, Router,Routes } from 'react-router-dom'
 import Counter from './pages/Counter';
 import HandleApi from './pages/Apipage';
 import Timer from './pages/Timer';
+import Todolist from './pages/Todolist';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -20,6 +21,7 @@ function App() {
       <Route path="/" element={<Counter/>} />
       <Route path="/useeffect" element={<HandleApi/>} />
       <Route path="/useref" element={<Timer/>} />
+      <Route path="/usereducer" element={<Todolist/>} />
       
       </Routes>
       </div>
